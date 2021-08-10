@@ -1,0 +1,18 @@
+{
+    "sourceFile": "src/App.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1628621011118,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1628621011118,
+            "name": "Commit-0",
+            "content": "import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'\nimport Header from './components/Header/';\n\n\nimport GlobalStyles from './Styles/GlobalStyles'\n\nfunction App() {\n  return (\n    <Router>\n      <Header />\n      <Switch>\n        \n      </Switch>\n      <GlobalStyles />\n    </Router>\n    \n\n\n  );\n}\n\nexport default App;"
+        }
+    ]
+}
