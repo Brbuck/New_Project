@@ -1,0 +1,26 @@
+{
+    "sourceFile": "src/components/Header_Drop/index.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1628621185650,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1628621217403,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,61 @@\n-rfc\n\\ No newline at end of file\n+import React, { useState } from 'react';\r\n+import styled from 'styled-components';\r\n+\r\n+import { Container, Links, Icon } from './styles';\r\n+\r\n+import { FaBars } from 'react-icons/fa';\r\n+import { AiOutlineClose } from 'react-icons/ai';\r\n+import { Data } from './Data';\r\n+import Submenu from './Submenu'\r\n+\r\n+const DropDown = styled.div`\r\n+    display: flex;\r\n+    flex-direction: column;\r\n+    width: 350px;\r\n+    height: 100vh;\r\n+    position: absolute;\r\n+    background-color: var(--color-white);\r\n+    box-shadow: 0px 0px 8px 5px var(--color-border);\r\n+    top: 0;\r\n+    left: ${({ click }) => (click ? '0' : '-100%')};\r\n+    transition: ease all .5s;\r\n+    padding: 8px 0px;\r\n+\r\n+    >div{\r\n+        padding-left: 280px;\r\n+        text-align: right;\r\n+    }\r\n+`;\r\n+\r\n+function Header() {\r\n+    const [click, setClick] = useState(false)\r\n+    const handleClick = () => {\r\n+        setClick(!click)\r\n+    }\r\n+    return (\r\n+        <>\r\n+            <Container>\r\n+                <div>\r\n+                    <Icon onClick={handleClick}> <FaBars /></Icon>\r\n+                </div>\r\n+                <div>\r\n+                    <Links to='/revista'>Revista</Links>\r\n+                    <Links to='/tabela_fipe'>Tabela Fipe</Links>\r\n+                    <Links to='/login'>Login</Links>\r\n+                </div>\r\n+            </Container>\r\n+            <DropDown click={click} >\r\n+                <div>\r\n+                    <Icon onClick={handleClick}> <AiOutlineClose /></Icon>\r\n+                </div>\r\n+                {\r\n+                    Data.map((item, index) =>{\r\n+                        return <Submenu key={index} item={item} />\r\n+                    })\r\n+                }\r\n+            </DropDown>\r\n+        </>\r\n+    );\r\n+}\r\n+\r\n+export default Header;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1628621236554,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n         text-align: right;\r\n     }\r\n `;\r\n \r\n-function Header() {\r\n+function Header_drop() {\r\n     const [click, setClick] = useState(false)\r\n     const handleClick = () => {\r\n         setClick(!click)\r\n     }\r\n@@ -57,5 +57,5 @@\n         </>\r\n     );\r\n }\r\n \r\n-export default Header;\n\\ No newline at end of file\n+export default Header_drop;\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1628621185650,
+            "name": "Commit-0",
+            "content": "rfc"
+        }
+    ]
+}
