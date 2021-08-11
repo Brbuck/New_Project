@@ -1,0 +1,22 @@
+{
+    "sourceFile": "src/components/HeaderDropDown/styles.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1628707469218,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1628707478508,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,7 @@\n import styled from 'styled-components';\r\n import { Link } from 'react-router-dom';\r\n \r\n-\r\n export const Container = styled.header`\r\n     height: 80px;\r\n     display: flex;\r\n     align-items: center;\r\n"
+                }
+            ],
+            "date": 1628707469218,
+            "name": "Commit-0",
+            "content": "import styled from 'styled-components';\r\nimport { Link } from 'react-router-dom';\r\n\r\n\r\nexport const Container = styled.header`\r\n    height: 80px;\r\n    display: flex;\r\n    align-items: center;\r\n    justify-content: space-between;\r\n    padding: 8px 50px;\r\n    box-shadow: 0px 0px 8px 0px var(--color-border);\r\n`;\r\n\r\nexport const Links = styled(Link)`\r\n    font-size: 1.2rem;\r\n    color: var(--color-gray);\r\n    margin-left: 15px;\r\n`\r\nexport const Icon = styled.div`\r\n    font-size: 20px;\r\n    cursor: pointer;\r\n    padding: 20px;\r\n`\r\n"
+        }
+    ]
+}
