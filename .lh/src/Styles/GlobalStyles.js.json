@@ -1,0 +1,18 @@
+{
+    "sourceFile": "src/Styles/GlobalStyles.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1628707240182,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1628707240182,
+            "name": "Commit-0",
+            "content": "import { createGlobalStyle } from \"styled-components\";\r\n\r\nexport default createGlobalStyle`\r\n  * {\r\n    margin: 0;\r\n    padding: 0;\r\n    box-sizing: border-box;\r\n    text-decoration: none;\r\n  }\r\n  html {\r\n    min-height: 100%;\r\n    background: var(--color-white);\r\n  }\r\n  h1, h2, h3, h4, h5, h6 {\r\n    font-weight: 600;\r\n  }\r\n  *, button, input {\r\n    border: 0;\r\n    background: none;\r\n    font-family: 'Montserrat', -apple-system,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;\r\n  }\r\n  :root {\r\n    --color-primary: #f7f7f7;\r\n    --color-black: #333;\r\n    --color-white: #FFF;\r\n    --color-gray: #5c5f60;\r\n    --color-blue: #002C63;\r\n    --color-light-blue: #849bfb;\r\n    --color-red: #B22222;\r\n    --color-yellow: #FFD700;\r\n    --color-orange: #faa74a;\r\n\r\n    --color-botao: #FFD862;\r\n    --color-hover-botao: #f6eda9;\r\n    --color-header: #Fff;\r\n    --color-painel: #0c3a84;\r\n    --color-border: #ddd;\r\n\r\n    --color-hover: #FFFAFA;\r\n    --color-hover-card: #E8E8E8;\r\n    --reputation-2: #004685;\r\n    --reputation-3: #FFFDE5;\r\n    --reputation-5: #00A650;\r\n\r\n    --panel-shadow: 0 1px 3px 0 rgba(0,0,0,.3);\r\n  }\r\n`;\r\n"
+        }
+    ]
+}
