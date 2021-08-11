@@ -1,6 +1,5 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import Header from './components/Header/';
-import { Onix } from './pages/Carros';
+import HeaderDropDown from './components/HeaderDropDown/';
 
 
 import GlobalStyles from './Styles/GlobalStyles'
@@ -8,9 +7,9 @@ import GlobalStyles from './Styles/GlobalStyles'
 function App() {
   return (
     <Router>
-      <Header />
+      <HeaderDropDown />
       <Switch>
-        <Route path='/carros/chevrolet/onix' component={Onix} />
+        
       </Switch>
       <GlobalStyles />
     </Router>

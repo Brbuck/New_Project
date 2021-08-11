@@ -1,0 +1,22 @@
+{
+    "sourceFile": "src/App.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1628706885439,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1628706891761,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'\n import Header from './components/Header/';\n-import { Onix } from './Pe/Carros';\n+import { Onix } from './e/Carros';\n \n \n import GlobalStyles from './Styles/GlobalStyles'\n \n"
+                }
+            ],
+            "date": 1628706885439,
+            "name": "Commit-0",
+            "content": "import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'\nimport Header from './components/Header/';\nimport { Onix } from './Page/Carros';\n\n\nimport GlobalStyles from './Styles/GlobalStyles'\n\nfunction App() {\n  return (\n    <Router>\n      <Header />\n      <Switch>\n        <Route path='/carros/chevrolet/onix' component={Onix} />\n      </Switch>\n      <GlobalStyles />\n    </Router>\n    \n\n\n  );\n}\n\nexport default App;"
+        }
+    ]
+}
