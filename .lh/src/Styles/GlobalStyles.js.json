@@ -3,11 +3,15 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 0,
+            "activePatchIndex": 1,
             "patches": [
                 {
                     "date": 1628707240182,
                     "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1628787661147,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,9 +35,9 @@\n     --color-header: #Fff;\r\n     --color-painel: #0c3a84;\r\n     --color-border: #ddd;\r\n \r\n-    --color-hover: #FFFAFA;\r\n+    --color-hover: #BEBEBE;\r\n     --color-hover-card: #E8E8E8;\r\n     --reputation-2: #004685;\r\n     --reputation-3: #FFFDE5;\r\n     --reputation-5: #00A650;\r\n"
                 }
             ],
             "date": 1628707240182,
