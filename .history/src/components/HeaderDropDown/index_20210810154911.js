@@ -11,26 +11,23 @@ import Submenu from './Submenu'
 const DropDown = styled.div`
     display: flex;
     flex-direction: column;
-    width: 300px;
+    width: 350px;
     height: 100vh;
     position: absolute;
     background-color: var(--color-white);
     box-shadow: 0px 0px 8px 5px var(--color-border);
-    position: fixed;
     top: 0;
     left: ${({ click }) => (click ? '0' : '-100%')};
-    z-index: 10;
-    overflow-x: scroll;
     transition: ease all .5s;
     padding: 8px 0px;
 
     >div{
-        padding-left: 240px;
+        padding-left: 280px;
         text-align: right;
     }
 `;
 
-function Header() {
+function HeaderDropDown() {
     const [click, setClick] = useState(false)
     const handleClick = () => {
         setClick(!click)
@@ -61,4 +58,4 @@ function Header() {
     );
 }
 
-export default Header;
+export default HeaderDropDown;

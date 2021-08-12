@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 1,
+            "activePatchIndex": 2,
             "patches": [
                 {
                     "date": 1628707469218,
@@ -12,6 +12,10 @@
                 {
                     "date": 1628707478508,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,7 @@\n import styled from 'styled-components';\r\n import { Link } from 'react-router-dom';\r\n \r\n-\r\n export const Container = styled.header`\r\n     height: 80px;\r\n     display: flex;\r\n     align-items: center;\r\n"
+                },
+                {
+                    "date": 1628787810513,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,13 +1,20 @@\n import styled from 'styled-components';\r\n import { Link } from 'react-router-dom';\r\n \r\n+\r\n export const Container = styled.header`\r\n+    position: fixed;\r\n+    width: 100%;\r\n     height: 80px;\r\n+    top: 0;\r\n+    left: 0;\r\n+    z-index: 10;\r\n     display: flex;\r\n     align-items: center;\r\n     justify-content: space-between;\r\n     padding: 8px 50px;\r\n+    background-color: var(--color-white);\r\n     box-shadow: 0px 0px 8px 0px var(--color-border);\r\n `;\r\n \r\n export const Links = styled(Link)`\r\n"
                 }
             ],
             "date": 1628707469218,
