@@ -205,3 +205,57 @@ export const Vulcan = () => {
         </>
     );
 }
+
+export const Z1000 = () => {
+    return (
+        <>
+            <Container>
+                <img alt='Z1000_image' src='https://content2.kawasaki.com/ContentStorage/KMB/Products/4952/2837b038-9475-46fa-88ae-ac30abd0cbbd.png?w=800&h=449' />
+                <h2>Z1000</h2>
+                <h3>Visão Geral</h3>
+                <p> A carroçaria esculpida dá vida ao design agressivo Z de inspiração Sugomi. Todos os floreios desnecessários foram removidos para realçar com ousadia
+                    a funcionalidade brutal. Aumentando o impacto de condução, o motor de 4 cilindros em linha de 1.043 cc e o chassi rígido oferecem uma pilotagem mais
+                    rígida e direta que transforma o Z1000 na Supernaked mais radical do mercado. Z1000 – Liberte-se.
+                </p>
+                <h2>DESIGN SUGOMI</h2>
+                <p> Sugomi pode ser visto como um predador na caça. Parado à beira de explodir em ação, seus olhos estão fixos em sua presa com um foco intenso,
+                    seu corpo agachado, músculos tensos em antecipação. Está concentrado tão intensamente na tarefa em mãos que a energia que está reunindo em
+                    preparação para atacar torna-se virtualmente palpável, discernível para aqueles que estão nas proximidades. O design sugomi do Z1000 se baseia
+                    no brilho intensamente intenso do predador e em uma forma dinâmica que irradia com a antecipação da ação explosiva.
+                </p>
+                <Gallery>
+                    <Zoon><img alt='Z1000_image' src='https://content2.kawasaki.com/ContentStorage/KMB/Products/4952/7290480a-0423-48f1-8c85-58ae612897ea.jpg?w=510&h=340&mode=crop' /></Zoon>
+                    <Zoon><img alt='Z1000_image' src='https://content2.kawasaki.com/ContentStorage/KMB/Products/4952/b6078b2e-3c8e-41a4-bae3-1f2705008678.jpg?w=510&h=340&mode=crop' /></Zoon>
+                    <Zoon> <img alt='Z1000_image' src='https://content2.kawasaki.com/ContentStorage/KMB/Products/4952/04fa6ff4-fd8c-4625-8bff-09624b56856f.jpg?w=510&h=340&mode=crop' /></Zoon>
+                </Gallery>
+            </Container>
+        </>
+    );
+}
+
+export const Z900 = () => {
+    return (
+        <>
+            <Container>
+                <img alt='Z900_image' src='https://content2.kawasaki.com/ContentStorage/KMB/Products/4950/3a4db646-18cb-403a-8e8d-fbf5dbca0cfd.png?w=800&h=449' />
+                <h2>Z900</h2>
+                <h3>VISÃO GERAL</h3>
+                <p> O espírito Z encontra sua expressão mais recente no Z900 com estilo Sugomi. Potência ao máximo, manuseio instintivo e controle de tração redefinem
+                    a experiência supernaked. Luzes LED e um display TFT trazem a mais recente tecnologia. Ultrapasse os limites e domine as ruas.quipado com componentes
+                    eletrônicos de alta qualidade, o Z900 combina potência com os mais recentes avanços em tecnologia para motocicletas.
+                </p>
+                <h2>ESTILO Z</h2>
+                <p> Refinado, apresentando a mais recente evolução do estilo Sugomi, a motocicleta Z900 tem paíneis atualizados. Eles são compactos e contribuem inegavelmente
+                    para uma imagem agressiva.Pilotar uma Kawasaki Z é uma experiência visceral. O Z900 torna a experiência do piloto uma prioridade máxima, esteja você acelerando
+                    em estradas sinuosas, ruas da cidade ou cruzando em rodovias abertas.Equipado com componentes eletrônicos de alta qualidade, o Z900 combina potência com os mais
+                    recentes avanços em tecnologia para motocicletas.
+                </p>
+                <Gallery>
+                    <Zoon><img alt='Z900_image' src='https://content2.kawasaki.com/ContentStorage/KMB/ProductTopFeature/1013/cd2e09d1-6240-4976-8b37-b41180df2c77.jpg?w=800' /></Zoon>
+                    <Zoon><img alt='Z900_image' src='https://content2.kawasaki.com/ContentStorage/KMB/Products/4950/0a456f86-ba75-4289-af6d-f9a714195fbb.jpg?w=510&h=340&mode=crop' /></Zoon>
+                    <Zoon> <img alt='Z900_image' src='https://content2.kawasaki.com/ContentStorage/KMB/ProductTopFeature/1013/01d28d30-d9b9-45d5-a914-7a4e70e428e1.jpg?w=800' /></Zoon>
+                </Gallery>
+            </Container>
+        </>
+    );
+}
