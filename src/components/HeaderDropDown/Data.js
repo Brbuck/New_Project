@@ -44,11 +44,11 @@ export const Data = [
         subitem: [
             {
                 modelo: 'Compass',
-                path: '/carros/jepp/compass'
+                path: '/carros/jeep/compass'
             },
             {
                 modelo: 'Renegade',
-                path: '/carros/jepp/renegade'
+                path: '/carros/jeep/renegade'
             }
         ]
     },
@@ -73,10 +73,6 @@ export const Data = [
         iconOpened: <RiArrowUpSFill />,
         subitem: [
             {
-                modelo: 'Golf',
-                path: '/carros/vw/golf'
-            },
-            {
                 modelo: 'Nivus',
                 path: '/carros/vw/nivus'
             },
@@ -93,11 +89,11 @@ export const Data = [
         subitem: [
             {
                 modelo: 'S1000RR',
-                path: '/motos/bmw/S1000RRr'
+                path: '/motos/bmw/s1000rr'
             },
             {
                 modelo: 'S1000XR ',
-                path: '/motos/bmw/S1000XR '
+                path: '/motos/bmw/s1000xr'
             }
         ]
     },
@@ -112,7 +108,7 @@ export const Data = [
             },
             {
                 modelo: 'CBR 1000RR Fireblade',
-                path: '/motos/honda/cBR_1000RR_fireblade'
+                path: '/motos/honda/cbr_1000rr_fireblade'
             }
         ]
     },
@@ -126,12 +122,12 @@ export const Data = [
                 path: '/motos/Kawasaki/vulcan'
             },
             {
-                modelo: 'Z1000',
-                path: '/motos/Kawasaki/z1000'
-            },
-            {
                 modelo: 'Z900',
                 path: '/motos/Kawasaki/z900'
+            },
+            {
+                modelo: 'Z1000',
+                path: '/motos/Kawasaki/z1000'
             }
         ]
     }
