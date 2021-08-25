@@ -1,20 +1,12 @@
 import styled from 'styled-components';
 
-export const Section = styled.body`
-    background-color: ${props => props.theme.colors.background};
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-`
 export const Form = styled.form`
     width: 480px;
     height: auto;
     padding: 30px;
     box-shadow: 1px 1px 2px 1px gray;
     border-radius: 4px;
-  
+    margin: 50px auto;
 `;
 
 export const Title = styled.h1`
@@ -34,7 +26,7 @@ export const Container = styled.div`
 export const Label = styled.label`
     display: block;
     font-size: 1rem;
-    color: ${props => props.theme.colors.color};
+    color: gray;
   
 `;
 

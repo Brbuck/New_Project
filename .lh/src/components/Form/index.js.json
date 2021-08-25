@@ -1,0 +1,18 @@
+{
+    "sourceFile": "src/components/Form/index.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1629917712097,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1629917712097,
+            "name": "Commit-0",
+            "content": "import React from 'react';\r\nimport { useForm } from \"react-hook-form\";\r\nimport { yupResolver } from '@hookform/resolvers/yup';\r\n\r\nimport { schema } from './Schema'\r\n\r\nimport { Button, Container, Form, Input, Label, Section, Title } from './styles';\r\n\r\nfunction Former() {\r\n    const { register, handleSubmit, formState: { errors } } = useForm({\r\n        resolver: yupResolver(schema)\r\n    });\r\n    const newUser = (user) => console.log(user);\r\n    return (\r\n        <Section>\r\n            <Form onSubmit={handleSubmit(newUser)}>\r\n                <Title>Formulário de Cadastro</Title>\r\n                <Container>\r\n                    <Label>Nome</Label>\r\n                    <Input type='text' {...register(\"name\")} />\r\n                    <p>{errors.name?.message}</p>\r\n                </Container>\r\n                <Container>\r\n                    <Label>Sobrenome</Label>\r\n                    <Input type='text' {...register(\"lastname\")} />\r\n                    <p>{errors.lastname?.message}</p>\r\n                </Container>\r\n                <Container>\r\n                    <Label>E-mail</Label>\r\n                    <Input type='email' {...register(\"email\")} />\r\n                    <p>{errors.email?.message}</p>\r\n                </Container>\r\n                <Container>\r\n                    <Label>Senha</Label>\r\n                    <Input type='password' {...register(\"password\")} />\r\n                    <p>{errors.password?.message}</p>\r\n                </Container>\r\n                <Container>\r\n                    <Label>Confirmar Senha</Label>\r\n                    <Input type='password' {...register(\"confirmPassword\")} />\r\n                    <p>{errors.confirmPassword?.message}</p>\r\n                </Container>\r\n                <Button type='submit'>Enviar</Button>\r\n            </Form>\r\n        </Section>\r\n    );\r\n}\r\n\r\nexport default Former;"
+        }
+    ]
+}
