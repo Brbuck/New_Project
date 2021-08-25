@@ -1,6 +1,8 @@
-import React, { useState } from 'react';
-import styled from 'styled-components';
-
+import React, {useContext } from 'react';
+import styled, { ThemeContext } from 'styled-components';
+import Switch from 'react-switch';
+import { shade } from 'polished';
+import AuthContext from '../../providers/auth'
 import { Container, Links, Icon } from './styles';
 
 import { FaBars } from 'react-icons/fa';
@@ -14,7 +16,7 @@ const DropDown = styled.div`
     width: 300px;
     height: 100vh;
     position: absolute;
-    background-color: var(--color-white);
+    background-color: ${props => props.theme.colors.background};
     box-shadow: 0px 0px 8px 5px var(--color-border);
     position: fixed;
     top: 0;
@@ -30,33 +32,47 @@ const DropDown = styled.div`
     }
 `;
 
-function Header() {
-    const [click, setClick] = useState(false)
+function Header(props) {
+    const [click, setClick] = useContext(AuthContext)
     const handleClick = () => {
         setClick(!click)
     }
+    const { colors, title } = useContext(ThemeContext);
     return (
         <>
             <Container>
                 <div>
-                    <Icon onClick={handleClick}> <FaBars /></Icon>
+                    <Icon onClick={handleClick}><FaBars /></Icon>
                 </div>
                 <div>
                     <Links to='/revista'>Revista</Links>
                     <Links to='/tabela_fipe'>Tabela Fipe</Links>
                     <Links to='/login'>Login</Links>
+                    <Switch
+                       onChange={props.toggleTheme}
+                        checked={title === 'dark'}
+                        checkedIcon={false}
+                        uncheckedIcon={false}
+                        height={10}
+                        width={40}
+                        handleDiameter={20}
+                        offColor={shade(0.20, colors.primary)}
+                        onColor={colors.secundary}
+                    />
                 </div>
+
             </Container>
             <DropDown click={click} >
                 <div>
                     <Icon onClick={handleClick}> <AiOutlineClose /></Icon>
                 </div>
                 {
-                    Data.map((item, index) =>{
+                    Data.map((item, index) => {
                         return <Submenu key={index} item={item} />
                     })
                 }
             </DropDown>
+            
         </>
     );
 }

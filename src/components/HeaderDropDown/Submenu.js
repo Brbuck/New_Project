@@ -1,19 +1,19 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import AuthContext from '../../providers/auth';
 
-
-export const Container = styled.li`
+const Menu = styled.li`
     cursor: pointer;
     font-size: 1rem;
-    color: var(--color-gray);
+    color: ${props => props.theme.colors.text};
     padding: 10px 0px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 
     &:hover{
-        background-color: var(--color-hover);
+        background-color: ${props => props.theme.colors.background_hover2};
     }
 
     >div{
@@ -29,11 +29,11 @@ export const Container = styled.li`
 
 const SubItemMenu = styled(Link)`
     font-size: 1rem;
-    color: var(--color-black);
+    color: ${props => props.theme.colors.text};
     padding: 15px 0px;
     
     &:hover{
-        background-color: var(--color-hover-card);
+        background-color: ${props => props.theme.colors.background_hover};
     }
 
    >div{
@@ -41,23 +41,19 @@ const SubItemMenu = styled(Link)`
     }
 
 `
-const Titles = styled.p`
-    font-size: 1rem;
-    color: red;
-    cursor: default;
-    
-    `
 
-
-function Header({ item }) {
+function SubMenu({item}) {
     const [subitens, setSubitens] = useState(false)
     const showSubitem = () => {
         setSubitens(!subitens)
     }
+
+    const [click, setClick] = useContext(AuthContext)
+
     return (
         
         <>
-            <Container onClick={item.subitem && showSubitem}>
+            <Menu onClick={item.subitem && showSubitem}>
                 <div>
                     {item.marca}
                 </div>
@@ -66,15 +62,15 @@ function Header({ item }) {
                         item.subitem && subitens ? item.iconOpened : item.subitem ? item.iconClosed : null
                     }
                 </span>
-            </Container>
-            {
+            </Menu>
+            { 
                 subitens && item.subitem.map((item, index) => {
-                    return (<SubItemMenu key={index} to={item.path}><span></span><div>{item.modelo}</div></SubItemMenu>)
+                    return (<SubItemMenu onClick={() => setClick(!click)} key={index} to={item.path}><span></span><div>{item.modelo}</div></SubItemMenu>)
                 })
             }
         </>
     );
 }
 
-export default Header;
+export default SubMenu;
 
