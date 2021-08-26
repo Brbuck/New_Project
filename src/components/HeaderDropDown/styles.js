@@ -13,17 +13,23 @@ export const Container = styled.header`
     align-items: center;
     justify-content: space-between;
     padding: 8px 50px;
-    background-color: var(--color-white);
-    box-shadow: 0px 0px 8px 0px var(--color-border);
+    background-color:  ${props => props.theme.colors.background};
+    box-shadow: ${props => props.theme.colors.shadow};
+  
+
+    >div{
+        display: flex;
+        align-items: center;
+    }
 `;
 
 export const Links = styled(Link)`
     font-size: 1.2rem;
-    color: var(--color-gray);
-    margin-left: 15px;
+    color: ${props => props.theme.colors.text};
+    margin: 0px 10px;
 `
 export const Icon = styled.div`
     font-size: 20px;
     cursor: pointer;
-    padding: 20px;
+    padding: 20px 20px 20px 0px;
 `

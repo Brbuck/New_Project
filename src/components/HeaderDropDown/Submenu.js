@@ -1,7 +1,8 @@
-import React, { useContext, useState } from 'react';
+import React, {useState } from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import AuthContext from '../../providers/auth';
+
+import {useAuth} from '../../providers/auth';
 
 const Menu = styled.li`
     cursor: pointer;
@@ -47,8 +48,7 @@ function SubMenu({item}) {
     const showSubitem = () => {
         setSubitens(!subitens)
     }
-
-    const [click, setClick] = useContext(AuthContext)
+    const {click, setClick} = useAuth();
 
     return (
         

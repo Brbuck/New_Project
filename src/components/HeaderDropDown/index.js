@@ -2,13 +2,14 @@ import React, {useContext } from 'react';
 import styled, { ThemeContext } from 'styled-components';
 import Switch from 'react-switch';
 import { shade } from 'polished';
-import AuthContext from '../../providers/auth'
-import { Container, Links, Icon } from './styles';
 
 import { FaBars } from 'react-icons/fa';
 import { AiOutlineClose } from 'react-icons/ai';
+
+import { Container, Links, Icon } from './styles';
 import { Data } from './Data';
 import Submenu from './Submenu'
+import {useAuth} from '../../providers/auth'
 
 const DropDown = styled.div`
     display: flex;
@@ -17,7 +18,7 @@ const DropDown = styled.div`
     height: 100vh;
     position: absolute;
     background-color: ${props => props.theme.colors.background};
-    box-shadow: 0px 0px 8px 5px var(--color-border);
+    box-shadow: ${props => props.theme.colors.shadow};
     position: fixed;
     top: 0;
     left: ${({ click }) => (click ? '0' : '-100%')};
@@ -33,7 +34,7 @@ const DropDown = styled.div`
 `;
 
 function Header(props) {
-    const [click, setClick] = useContext(AuthContext)
+    const {click, setClick} = useAuth();
     const handleClick = () => {
         setClick(!click)
     }
