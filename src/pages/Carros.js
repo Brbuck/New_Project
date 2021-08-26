@@ -2,33 +2,34 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Container = styled.div`
-    margin: 100px auto;
+    margin: 80px auto 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     width: 1200px;
-
+   
     >img{
         width: 500px;
+        margin-top: 20px;
     }
 
     >h2{
         font-size: 2rem;
         margin: 10px 0px;
-        color: var(--color-black);
+        color: ${props => props.theme.colors.text};
     }
 
     >p{
         text-align: left;
         font-size: 1.2rem;
-        color: var(--color-gray);
+        color: ${props => props.theme.colors.text};
     }
     
     >h3, span{
         font-size: 1.5rem;
         margin: 6px 0px;
-        color: var(--color-black);
+        color: ${props => props.theme.colors.text};
     }
 
     >div{
@@ -45,13 +46,13 @@ const Container = styled.div`
             >h2{
             font-size: 2rem;
             margin: 10px 0px;
-            color: var(--color-black);
+            color:${props => props.theme.colors.text};
             }
 
             >p{
                 text-align: left;
             font-size: 1.2rem;
-            color: var(--color-gray);
+            color: ${props => props.theme.colors.text};
             }
        }
     }
@@ -65,11 +66,11 @@ const Gallery = styled.section`
     gap: 8px;
     align-items: center;
     justify-items: center;
-    
+    margin-bottom: 40px;
 `
 
 export const Zoon = styled.div`
-overflow: hidden;
+    overflow: hidden;
 
 >img{
        max-width: 100%;
@@ -79,8 +80,8 @@ overflow: hidden;
 
         &:hover{
             -moz-transform: scale(1.1);
-	-webkit-transform: scale(1.1);
-	transform: scale(1.2);
+            -webkit-transform: scale(1.1);
+             transform: scale(1.2);
         }
     }
 `
@@ -226,8 +227,9 @@ export const Civic = () => {
                 <img alt='Civic_image' src='https://www.honda.com.br/automoveis/sites/hab/files/2020-10/0_frontal_a_0.png' />
                 <h2>Civic 2021 - Evoluir Sempre </h2>
                 <h3>A partir de R$ 119.800,00*</h3>
-                <p>
-
+                <p> Ele também é equipado com diversos sistemas de segurança, como frenagem automática de emergência,
+                    alerta e correção para saídas de faixas, leitura de placas de trânsito, piloto automático adaptativo,
+                    airbags frontais, laterais e de cortina, assistente de partida em rampas e controles de estabilidade e tração.
                 </p>
                 <span></span>
                 <h2>Nunca foi um sedã comum.Agora está ainda melhor.</h2>
@@ -296,7 +298,6 @@ export const City = () => {
         </>
     );
 }
-
 
 export const Compass = () => {
     return (
@@ -540,3 +541,8 @@ export const Polo = () => {
         </>
     );
 }
+
+
+
+
+

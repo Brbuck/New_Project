@@ -3,33 +3,35 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Container = styled.div`
-margin: 100px auto;
+margin: 80px auto 0;
 display: flex;
 flex-direction: column;
 align-items: center;
 text-align: center;
 width: 1200px;
+background-color:  ${props => props.theme.colors.background};
 
 >img{
+    margin-top: 20px;
     width: 500px;
 }
 
 >h2{
     font-size: 2rem;
     margin: 10px 0px;
-    color: var(--color-black);
+    color: ${props => props.theme.colors.text};
 }
 
 >p{
     text-align: left;
     font-size: 1.2rem;
-    color: var(--color-gray);
+    color: ${props => props.theme.colors.text}
 }
 
 >h3, span{
     font-size: 1.5rem;
     margin: 6px 0px;
-    color: var(--color-black);
+    color: ${props => props.theme.colors.text};
 }
 `;
 
@@ -40,7 +42,7 @@ grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
 gap: 8px;
 align-items: center;
 justify-items: center;
-margin-top: 20px;
+margin: 20px auto 40px;
 
 `
 
@@ -55,8 +57,8 @@ overflow: hidden;
 
     &:hover{
         -moz-transform: scale(1.1);
--webkit-transform: scale(1.1);
-transform: scale(1.2);
+        -webkit-transform: scale(1.1);
+         transform: scale(1.2);
     }
 }
 `
@@ -124,6 +126,7 @@ export const S100XR = () => {
         </>
     );
 }
+
 
 export const CB1000R = () => {
     return (

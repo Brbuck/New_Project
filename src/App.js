@@ -1,13 +1,14 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import { ThemeProvider } from 'styled-components';
-import Header from './components/Header/';
-import { City, Civic, Compass, Cruze, Onix, Tracker, Renegade, Corolla, Hilux, Nivus, Polo } from './Page/Carros';
-import Former from './components/Form'
 
 import GlobalStyles from './Styles/GlobalStyles'
-import { S100RR, S100XR, CB1000R, CBR1000RR_Fireblade, Vulcan, Z1000, Z900 } from './Page/Motos';
 import light from './Styles/themes/ligth';
 import dark from './Styles/themes/dark';
+
+import Header from './components/Header/';
+import Former from './components/Form'
+import { City, Civic, Compass, Cruze, Onix, Tracker, Renegade, Corolla, Hilux, Nivus, Polo } from './Page/Carros';
+import { S100RR, S100XR, CB1000R, CBR1000RR_Fireblade, Vulcan, Z1000, Z900 } from './Page/Motos';
 
 import usePeristedState from './utils/usePersistedState'
 
