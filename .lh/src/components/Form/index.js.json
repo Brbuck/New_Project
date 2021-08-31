@@ -3,11 +3,15 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 0,
+            "activePatchIndex": 1,
             "patches": [
                 {
                     "date": 1629917712097,
                     "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1630432707424,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n import { yupResolver } from '@hookform/resolvers/yup';\r\n \r\n import { schema } from './Schema'\r\n \r\n-import { Button, Container, Form, Input, Label, Section, Title } from './styles';\r\n+import { Button, Container, Form, Error, Input, Label, Section, Title } from './styles';\r\n \r\n function Former() {\r\n     const { register, handleSubmit, formState: { errors } } = useForm({\r\n         resolver: yupResolver(schema)\r\n@@ -17,29 +17,29 @@\n                 <Title>Formulário de Cadastro</Title>\r\n                 <Container>\r\n                     <Label>Nome</Label>\r\n                     <Input type='text' {...register(\"name\")} />\r\n-                    <p>{errors.name?.message}</p>\r\n+                    <Error>{errors.name?.message}</Error>\r\n                 </Container>\r\n                 <Container>\r\n                     <Label>Sobrenome</Label>\r\n                     <Input type='text' {...register(\"lastname\")} />\r\n-                    <p>{errors.lastname?.message}</p>\r\n+                    <Error>{errors.lastname?.message}</Error>\r\n                 </Container>\r\n                 <Container>\r\n                     <Label>E-mail</Label>\r\n                     <Input type='email' {...register(\"email\")} />\r\n-                    <p>{errors.email?.message}</p>\r\n+                    <Error>{errors.email?.message}</Error>\r\n                 </Container>\r\n                 <Container>\r\n                     <Label>Senha</Label>\r\n                     <Input type='password' {...register(\"password\")} />\r\n-                    <p>{errors.password?.message}</p>\r\n+                    <Error>{errors.password?.message}</Error>\r\n                 </Container>\r\n                 <Container>\r\n                     <Label>Confirmar Senha</Label>\r\n                     <Input type='password' {...register(\"confirmPassword\")} />\r\n-                    <p>{errors.confirmPassword?.message}</p>\r\n+                    <Error>{errors.confirmPassword?.message}</Error>\r\n                 </Container>\r\n                 <Button type='submit'>Enviar</Button>\r\n             </Form>\r\n         </Section>\r\n"
                 }
             ],
             "date": 1629917712097,
