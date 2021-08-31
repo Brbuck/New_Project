@@ -1,0 +1,18 @@
+{
+    "sourceFile": "src/components/HeaderDropDown/Principal.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1630432977236,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1630432977236,
+            "name": "Commit-0",
+            "content": "import React from 'react';\r\nimport styled from 'styled-components';\r\n\r\nconst Container = styled.div`\r\n    margin: 100px auto;\r\n    padding: 50px;\r\n`;\r\n\r\nconst Title = styled.h1`\r\n    font-size: 3rem;\r\n    color: red;\r\n    text-align: center;\r\n\r\n`\r\n\r\nfunction Principal() {\r\n    return (\r\n        <Container>\r\n            <Title>Sejam bem vindos</Title>\r\n        </Container>\r\n    )\r\n}\r\n\r\nexport default Principal;"
+        }
+    ]
+}
