@@ -1,0 +1,22 @@
+{
+    "sourceFile": "src/components/HeaderDropDown/DataPrincipal.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1630518250769,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1630518258126,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-export const Data = [\r\n+export const DataPrincipal = [\r\n     {\r\n         image: 'https://catalogo.webmotors.com.br/imagens/prod/portal/img/logos/carro/audi.png/?w=64&h=64',\r\n         name: 'Audi'\r\n     },\r\n"
+                }
+            ],
+            "date": 1630518250769,
+            "name": "Commit-0",
+            "content": "export const Data = [\r\n    {\r\n        image: 'https://catalogo.webmotors.com.br/imagens/prod/portal/img/logos/carro/audi.png/?w=64&h=64',\r\n        name: 'Audi'\r\n    },\r\n    {\r\n        image: 'https://catalogo.webmotors.com.br/imagens/prod/portal/img/logos/carro/bmw.png/?w=64&h=64',\r\n        name: 'BMW'\r\n    },\r\n    {\r\n        image: 'https://catalogo.webmotors.com.br/imagens/prod/portal/img/logos/carro/chevrolet.png/?w=64&h=64',\r\n        name: 'Chevrolet'\r\n    },\r\n    {\r\n        image: 'https://catalogo.webmotors.com.br/imagens/prod/portal/img/logos/carro/ferrari.png/?w=64&h=64',\r\n        name: 'Ferrari'\r\n    },\r\n    {\r\n        image: 'https://catalogo.webmotors.com.br/imagens/prod/portal/img/logos/carro/honda.png/?w=64&h=64',\r\n        name: 'Honda'\r\n    },\r\n    {\r\n        image: 'https://catalogo.webmotors.com.br/imagens/prod/portal/img/logos/carro/jeep.png/?w=64&h=64',\r\n        name: 'Jeep'\r\n    },\r\n    {\r\n        image: 'https://catalogo.webmotors.com.br/imagens/prod/portal/img/logos/carro/lamborghini.png/?w=64&h=64',\r\n        name: 'Lamborghini'\r\n    },\r\n    {\r\n        image: 'https://catalogo.webmotors.com.br/imagens/prod/portal/img/logos/carro/mclaren.png/?w=64&h=64',\r\n        name: 'Mclaren'\r\n    },\r\n    {\r\n        image: 'https://catalogo.webmotors.com.br/imagens/prod/portal/img/logos/carro/nissan.png/?w=64&h=64',\r\n        name: 'Nissan'\r\n    },\r\n    {\r\n        image: 'https://catalogo.webmotors.com.br/imagens/prod/portal/img/logos/carro/porsche.png/?w=64&h=64',\r\n        name: 'Porsche'\r\n    },\r\n    {\r\n        image: 'https://catalogo.webmotors.com.br/imagens/prod/portal/img/logos/carro/toyota.png/?w=64&h=64',\r\n        name: 'Toyota'\r\n    },\r\n    {\r\n        image: 'https://catalogo.webmotors.com.br/imagens/prod/portal/img/logos/carro/volkswagen.png/?w=64&h=64',\r\n        name: 'Volkswagen'\r\n    }\r\n]"
+        }
+    ]
+}
