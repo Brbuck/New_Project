@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Data } from './DataPrincipal';
+import { Data } from './DataPrinci';
 
 const Container = styled.div`
     margin: 80px auto 0px;
