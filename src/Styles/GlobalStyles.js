@@ -47,6 +47,6 @@ export default createGlobalStyle`
     --reputation-3: #FFFDE5;
     --reputation-5: #00A650;
 
-    --panel-shadow: 0 1px 3px 0 rgba(0,0,0,.3);
+    --panel-shadow: 0 2px 8px 0 rgba(0,0,0,.8);
   }
 `;

@@ -46,6 +46,7 @@ function App() {
             <Route path='/motos/Kawasaki/z1000' component={Z1000} />
             <Route path='/motos/Kawasaki/z900' component={Z900} />
             <Route path='/tabela_fipe' component={() => { window.location.href = 'https://veiculos.fipe.org.br/';} }/>
+            <Route path='/revista' component={() => { window.location.href = 'https://www.autosport.com';} }/>
             <Route path='/login' component={Login} />
             <Route path='/cadastro' component={Former} />
           </Switch>
