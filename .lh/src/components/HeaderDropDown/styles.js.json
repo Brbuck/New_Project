@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 2,
+            "activePatchIndex": 3,
             "patches": [
                 {
                     "date": 1628707469218,
@@ -16,6 +16,10 @@
                 {
                     "date": 1628787810513,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,13 +1,20 @@\n import styled from 'styled-components';\r\n import { Link } from 'react-router-dom';\r\n \r\n+\r\n export const Container = styled.header`\r\n+    position: fixed;\r\n+    width: 100%;\r\n     height: 80px;\r\n+    top: 0;\r\n+    left: 0;\r\n+    z-index: 10;\r\n     display: flex;\r\n     align-items: center;\r\n     justify-content: space-between;\r\n     padding: 8px 50px;\r\n+    background-color: var(--color-white);\r\n     box-shadow: 0px 0px 8px 0px var(--color-border);\r\n `;\r\n \r\n export const Links = styled(Link)`\r\n"
+                },
+                {
+                    "date": 1631106848995,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,18 +12,46 @@\n     display: flex;\r\n     align-items: center;\r\n     justify-content: space-between;\r\n     padding: 8px 50px;\r\n-    background-color: var(--color-white);\r\n-    box-shadow: 0px 0px 8px 0px var(--color-border);\r\n+    background-color:  ${props => props.theme.colors.background};\r\n+    box-shadow: ${props => props.theme.colors.shadow};\r\n+\r\n+    @media screen and (max-width: 560px){\r\n+        padding: 8px 40px;\r\n+    }\r\n+\r\n+    @media screen and (max-width: 440px){\r\n+        padding: 8px 30px;\r\n+    }\r\n+  \r\n+\r\n+    >div{\r\n+        display: flex;\r\n+        align-items: center;\r\n+    }\r\n `;\r\n \r\n export const Links = styled(Link)`\r\n     font-size: 1.2rem;\r\n-    color: var(--color-gray);\r\n-    margin-left: 15px;\r\n+    color: ${props => props.theme.colors.text};\r\n+    margin: 0px 10px;\r\n+\r\n+    @media screen and (max-width: 560px){\r\n+        font-size: 1.1rem;\r\n+    }\r\n+\r\n+    @media screen and (max-width: 440px){\r\n+        font-size: 0.900rem;\r\n+        margin: 0px 4px;\r\n+    }\r\n `\r\n export const Icon = styled.div`\r\n     font-size: 20px;\r\n     cursor: pointer;\r\n-    padding: 20px;\r\n+    padding: 20px 20px 20px 0px;\r\n+\r\n+    @media screen and (max-width: 560px){\r\n+        font-size: 18px;\r\n+    }\r\n+\r\n `\r\n"
                 }
             ],
             "date": 1628707469218,

@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Data } from './Data';
+import { Data } from './DataPrincipal';
 
 const Container = styled.div`
     margin: 80px auto 0px;
@@ -11,44 +11,12 @@ const Title = styled.h1`
     font-size: 3rem;
     color: ${props => props.theme.colors.text};
     text-align: center;
-
-    @media screen and (max-width: 960px){
-        font-size: 2.3rem;
-    }
-
-    @media screen and (max-width: 768px){
-        font-size: 1.9rem;
-    }
-
-    @media screen and (max-width: 560px){
-        font-size: 1.5rem;
-    }
-
-    @media screen and (max-width: 420px){
-        font-size: 1.2rem;
-    }
 `
 const Sub = styled.p`
     font-size: 1.4rem;
     margin: 15px 0;
     text-align: center;
     color: ${props => props.theme.colors.text};
-
-    @media screen and (max-width: 960px){
-        font-size: 1.3rem;
-    }
-
-    @media screen and (max-width: 768px){
-        font-size: 1.2rem;
-    }
-
-    @media screen and (max-width: 560px){
-        font-size: 1.1rem;
-    }
-
-    @media screen and (max-width: 420px){
-        font-size: 0.900rem;
-    }
 `
 const Section = styled.section`
     padding: 20px;
@@ -56,8 +24,6 @@ const Section = styled.section`
     grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
     justify-items: center;
     gap: 15px;
-
-   
    
 `
 
@@ -72,10 +38,6 @@ const Card = styled.div`
 
     >img{
         width: 130px;
-
-        @media screen and (max-width: 560px){
-            width: 100px;
-        }
     }
 
     >span{
