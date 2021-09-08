@@ -3,91 +3,42 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Container = styled.div`
-    margin: 80px auto 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    width: 85%;
-
-    @media screen and (max-width: 960px){
-        width: 90%;
-        
-    }
+margin: 80px auto 0;
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+width: 1200px;
+background-color:  ${props => props.theme.colors.background};
 
 >img{
     margin-top: 20px;
     width: 500px;
-
-    @media screen and (max-width: 960px){
-        width: 400px;
-    }
-
-        @media screen and (max-width: 768px){
-            width: 300px;
-        }
-
 }
 
 >h2{
     font-size: 2rem;
     margin: 10px 0px;
     color: ${props => props.theme.colors.text};
-    
-    @media screen and (max-width: 960px){
-            font-size: 1.8rem;
-    }
-
-    @media screen and (max-width: 768px){
-        font-size: 1.6rem;
-    }
-
-    @media screen and (max-width: 560px){
-        font-size: 1.3rem;
-    }
-
-    @media screen and (max-width: 420px){
-        font-size: 1rem;
-    }
 }
 
 >p{
     text-align: left;
     font-size: 1.2rem;
-    color: ${props => props.theme.colors.text};
-
-    @media screen and (max-width: 960px){
-            font-size: 1rem;
-    }
-
-    @media screen and (max-width: 768px){
-        font-size: 0.900rem;
-    }
-
-    @media screen and (max-width: 560px){
-        font-size: 1.3rem;
-    }
-
-    @media screen and (max-width: 420px){
-        font-size: 1rem;
-    }
+    color: ${props => props.theme.colors.text}
 }
 
 >h3, span{
     font-size: 1.5rem;
     margin: 6px 0px;
     color: ${props => props.theme.colors.text};
-
-    @media screen and (max-width: 768px){
-            font-size: 1.2rem;
-    }
 }
 `;
 
 const Gallery = styled.section`
-width: 100%;
+width: 1200px;
 display: grid;
-grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
 gap: 8px;
 align-items: center;
 justify-items: center;
