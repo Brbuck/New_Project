@@ -7,79 +7,29 @@ const Container = styled.div`
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 85%;
-
-    @media screen and (max-width: 960px){
-        width: 90%;
-        
-    }
+    width: 1200px;
    
     >img{
         width: 500px;
         margin-top: 20px;
-
-        @media screen and (max-width: 960px){
-            width: 400px;
-        }
-
-        @media screen and (max-width: 768px){
-            width: 300px;
-        }
-
     }
 
     >h2{
         font-size: 2rem;
         margin: 10px 0px;
         color: ${props => props.theme.colors.text};
-
-        @media screen and (max-width: 960px){
-            font-size: 1.8rem;
-        }
-
-        @media screen and (max-width: 768px){
-            font-size: 1.6rem;
-        }
-
-        @media screen and (max-width: 560px){
-            font-size: 1.3rem;
-        }
-
-        @media screen and (max-width: 420px){
-            font-size: 1rem;
-        }
     }
 
     >p{
         text-align: left;
         font-size: 1.2rem;
         color: ${props => props.theme.colors.text};
-
-        @media screen and (max-width: 960px){
-            font-size: 1rem;
-        }
-
-        @media screen and (max-width: 768px){
-            font-size: 0.900rem;
-        }
-
-        @media screen and (max-width: 560px){
-            font-size: 1.3rem;
-        }
-
-        @media screen and (max-width: 420px){
-            font-size: 1rem;
-        }
     }
     
     >h3, span{
         font-size: 1.5rem;
         margin: 6px 0px;
         color: ${props => props.theme.colors.text};
-
-        @media screen and (max-width: 768px){
-            font-size: 1.2rem;
-        }
     }
 
     >div{
@@ -87,61 +37,22 @@ const Container = styled.div`
         align-items: center;
         margin: 20px 0px;
 
-        @media screen and (max-width: 720px){
-            flex-direction: column;
-        }
-        
-
         >img{
-            width: 100%;
-            min-width: 320px;
-            height: 100%;
-            min-height: 150px;
-
+            width: 700px;
         }
 
        >div{
            padding: 10px 30px;
-
-           @media screen and (max-width: 560px){
-                 padding: 10px 0px;
-            }
-
             >h2{
-                font-size: 2rem;
-                margin: 10px 0px;
-                color:${props => props.theme.colors.text};
-            
-            @media screen and (max-width: 960px){
-                font-size: 1.7rem;
+            font-size: 2rem;
+            margin: 10px 0px;
+            color:${props => props.theme.colors.text};
             }
-
-            @media screen and (max-width: 768px){
-                font-size: 1.5rem;
-            }
-
-            @media screen and (max-width: 560px){
-                font-size: 1.3rem;
-            }
-
-            @media screen and (max-width: 420px){
-                font-size: 1rem;
-            }
-        }
 
             >p{
                 text-align: left;
-                font-size: 1.2rem;
-                color: ${props => props.theme.colors.text};
-
-                @media screen and (max-width: 960px){
-                    font-size: 1rem;
-                }
-
-                @media screen and (max-width: 768px){
-                    font-size: 1rem;
-                }
-
+            font-size: 1.2rem;
+            color: ${props => props.theme.colors.text};
             }
        }
     }
@@ -149,9 +60,9 @@ const Container = styled.div`
 `;
 
 const Gallery = styled.section`
-    width: 100%;
+    width: 1200px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
     gap: 8px;
     align-items: center;
     justify-items: center;
@@ -161,11 +72,11 @@ const Gallery = styled.section`
 export const Zoon = styled.div`
     overflow: hidden;
 
-        >img{
-            max-width: 100%;
-            -moz-transition: all 0.3s;
-            -webkit-transition: all 0.3s;
-            transition: all 0.3s;
+>img{
+       max-width: 100%;
+        -moz-transition: all 0.3s;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
 
         &:hover{
             -moz-transform: scale(1.1);
