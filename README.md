@@ -8,6 +8,7 @@ Desenvolvimento de um site para fins de estudo.
 
 - [x] React Js
 - [x] Styled Components
+- [x] React-Router-Dom
 - [x] React Icons
 
     
